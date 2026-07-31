@@ -151,7 +151,7 @@ public class WifiChipAidlImplTest extends WifiBaseTest {
                 WifiAvailableChannel.OP_MODE_STA,
                 WifiAvailableChannel.FILTER_REGULATORY));
 
-                verify(mIWifiChipMock, times(2))
+        verify(mIWifiChipMock, times(2))
                 .getUsableChannels(anyInt(), anyInt(), anyInt());
     }
 
