@@ -154,8 +154,8 @@ public class WifiChipAidlImplTest extends WifiBaseTest {
         verify(mIWifiChipMock, times(2))
                 .getUsableChannels(anyInt(), anyInt(), anyInt());
     }
-    
-    /**
+
+     /**
      * Test translation to WifiManager.WIFI_FEATURE_*
      */
     @Test
@@ -168,9 +168,9 @@ public class WifiChipAidlImplTest extends WifiBaseTest {
         BitSet expected = createCapabilityBitset(WifiManager.WIFI_FEATURE_TX_POWER_LIMIT,
                 WifiManager.WIFI_FEATURE_D2D_RTT, WifiManager.WIFI_FEATURE_D2AP_RTT);
         assertTrue(expected.equals(mDut.halToFrameworkChipFeatureSet(halFeatures)));
-    }
+     }
 
-    /**
+     /**
      * Test that getRingBufferStatus gets and translates its values correctly.
      */
     @Test
